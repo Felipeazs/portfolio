@@ -2,52 +2,38 @@
 import Layout from "../layouts/Layout.astro"
 import { getCollection } from "astro:content"
 
-const books = await getCollection("books")
+const items = await getCollection("items")
 
 export const prerender = true
 ---
 
-<Layout title="Home">
+<Layout title="Felipe Zapata">
 	<main>
-		<h1 class="text-center text-7xl font-extrabold">Dev <span class="block">Books</span></h1>
+		<h1 class="text-center text-3xl font-semibold uppercase py-20">Felipe Zapata Soto</h1>
 	</main>
 
-	<section aria-label="Libros recomendados para programadores">
+	<section aria-label="Mi portafolio">
 		<div class="px-4 mx-auto max-w-screen-xl">
-			<div class="grid gap-6 md:grid-cols-2">
-				{
-					books.map((book) => {
-						const { slug, data } = book
-						const { title, img, readtime, description } = data
+			{
+				items.map((item) => {
+					const { slug, data } = item
+					const { title } = data
 
-						return (
-							<article class="flex">
+					return (
+						<article class="flex">
+							<div class="flex flex-col justify-center w-full items-center">
 								<a
-									href={`/libro/${slug}`}
-									class="mb-2 xl:mb-0 transition hover:scale-110">
-									<img
-										transition:name={`img-${slug}`}
-										class="mr-5 w-48 rounded"
-										src={`/${img}`}
-										alt={title}
-									/>
+									href={`/${slug}`}
+									transition:name={`title-${slug}`}
+									class="relative hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]
+									mb-2 text-5xl font-semibold leading-tight text-white">
+									{title}
 								</a>
-
-								<div class="flex flex-col justify-center">
-									<h2
-										transition:name={`title-${slug}`}
-										class="mb-2 text-2xl font-bold leading-tight text-white">
-										{title}
-									</h2>
-
-									<p class="mb-4 text-gray-300 max-w-sm">{description}</p>
-									<span class="text-xs">⏳ Lectura en {readtime} minutos</span>
-								</div>
-							</article>
-						)
-					})
-				}
-			</div>
+							</div>
+						</article>
+					)
+				})
+			}
 		</div>
 	</section></Layout
 >

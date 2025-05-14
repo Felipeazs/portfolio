@@ -14,4 +14,10 @@ const books = defineCollection({
 	}),
 })
 
-export const collections = { books }
+const items = defineCollection({
+	schema: z.object({
+		title: z.string(),
+	}),
+})
+
+export const collections = { books, items }

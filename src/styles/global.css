@@ -2,6 +2,35 @@
 
 @plugin "@tailwindcss/typography";
 
+@font-face {
+	font-family: "JetBrains";
+	font-weight: 300;
+	font-style: light;
+	src: url("/fonts/JetBrains/JetBrainsMonoNerdFontMono-Light.ttf") format("truetype");
+}
+@font-face {
+	font-family: "JetBrains";
+	font-weight: 400;
+	font-style: normal;
+	src: url("/fonts/JetBrains/JetBrainsMonoNerdFontMono-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "JetBrains";
+	font-weight: 500;
+	font-style: medium;
+	src: url("/fonts/JetBrains/JetBrainsMonoNerdFontMono-Medium.ttf") format("truetype");
+}
+@font-face {
+	font-family: "JetBrains";
+	font-weight: 700;
+	font-style: bold;
+	src: url("/fonts/JetBrains/JetBrainsMonoNerdFontMono-SemiBold.ttf") format("truetype");
+}
+
+@theme inline {
+	--font-jetbrains: "JetBrains";
+}
+
 html {
 	background: #13151a;
 	color: #fff;
