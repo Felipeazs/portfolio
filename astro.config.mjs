@@ -21,6 +21,6 @@ export default defineConfig({
 		},
 	},
 	site: "https://felipeazs.github.io",
-	base: "https://github.com/FelipeAZS/FelipeAZS.github.io",
+	base: "/portfolio",
 	adapter: vercel(),
 })
