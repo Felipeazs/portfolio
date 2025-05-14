@@ -20,5 +20,7 @@ export default defineConfig({
 			SCORE_API_ENDPOINT: envField.string({ context: "server", access: "public" }),
 		},
 	},
+	site: "https://felipeazs.github.io",
+	base: "https://github.com/FelipeAZS/FelipeAZS.github.io",
 	adapter: vercel(),
 })
