@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+html {
+	background: #13151a;
+	color: #fff;
+}
+
+body {
+	@apply grid place-content-center p-20;
+}
+
+body > div {
+	@apply container;
+}
