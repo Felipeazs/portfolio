@@ -8,7 +8,9 @@ export const prerender = true
 ---
 
 <Layout title="Felipe Zapata Soto">
-	<section aria-label="Mi portafolio">
+	<section
+		aria-label="Mi portafolio"
+		class="text-center">
 		<div class="px-4 py-20 mx-auto max-w-screen-xl">
 			{
 				items.map((item) => {
@@ -31,5 +33,14 @@ export const prerender = true
 				})
 			}
 		</div>
+		<a
+			href="/cv-felipe-zapata.pdf"
+			title="Descargar Curriculum"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="text-balance inline-flex gap-2 items-center bg-transparent hover:bg-slate-500 active:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg border border-white transition duration-200 ease-in-out hover:scale-105 justify-center text-center hover:cursor-pointer"
+			download
+			>cv</a
+		>
 	</section></Layout
 >
