@@ -41,7 +41,7 @@ body {
 }
 
 main {
-	@apply grid place-content-center p-20 h-full;
+	@apply grid place-content-center p-5 md:p-20 h-full;
 }
 
 main > div {
