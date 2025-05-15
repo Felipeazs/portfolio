@@ -37,9 +37,18 @@ html {
 }
 
 body {
-	@apply grid place-content-center p-20;
+	@apply min-h-svh;
 }
 
-body > div {
+main {
+	@apply grid place-content-center p-20 h-full;
+}
+
+main > div {
 	@apply container;
+}
+
+img {
+	margin: 0;
+	display: inline-block;
 }

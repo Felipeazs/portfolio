@@ -1,5 +1,5 @@
 ---
-title: Experiencias
+title: Experiencia
 ---
 
 **Desarrollador web Full Stack** con amplia experiencia en la elaboración y

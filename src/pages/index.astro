@@ -7,13 +7,9 @@ const items = await getCollection("items")
 export const prerender = true
 ---
 
-<Layout title="Felipe Zapata">
-	<main>
-		<h1 class="text-center text-3xl font-semibold uppercase py-20">Felipe Zapata Soto</h1>
-	</main>
-
+<Layout title="Felipe Zapata Soto">
 	<section aria-label="Mi portafolio">
-		<div class="px-4 mx-auto max-w-screen-xl">
+		<div class="px-4 py-20 mx-auto max-w-screen-xl">
 			{
 				items.map((item) => {
 					const { slug, data } = item
