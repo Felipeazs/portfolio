@@ -4,8 +4,6 @@ img: "/lazocns.png"
 url: "https://lazocns-4thdy.kinsta.app/"
 ---
 
-LazoCNS
-
 ## Purpose and Proposal
 
 This web application designed to support sustainable business consulting. It aims to provide tools and insights to help

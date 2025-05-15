@@ -4,8 +4,6 @@ img: "/the-circular-hub.png"
 url: "https://the-circular-hub-c8cc8.kinsta.app/"
 ---
 
-The Circular Hub
-
 ## Purpose and Proposal
 
 This web application is a user-centric platform designed to manage and evaluate user responses related to sustainability or

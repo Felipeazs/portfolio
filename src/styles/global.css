@@ -17,8 +17,8 @@
 @font-face {
 	font-family: "JetBrains";
 	font-weight: 500;
-	font-style: medium;
-	src: url("/fonts/JetBrains/JetBrainsMonoNerdFontMono-Medium.ttf") format("truetype");
+	font-style: italic;
+	src: url("/fonts/JetBrains/JetBrainsMonoNerdFontMono-italic.ttf") format("truetype");
 }
 @font-face {
 	font-family: "JetBrains";

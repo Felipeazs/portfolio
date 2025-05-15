@@ -1,10 +1,8 @@
 ---
 title: SaaS
 img: "/lazocns.png"
-url: "https://lazocns-4thdy.kinsta.app/"
+url: "https://saas-v9m2c.kinsta.app/"
 ---
-
-SaaS
 
 ## Purpose and Proposal
 
@@ -16,6 +14,8 @@ freemium model encouraging users to upgrade for enhanced capabilities.
 ## Web Stack
 
 ### Frontend
+
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) ![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=flat&logo=bun&logoColor=white) ![React Query](https://img.shields.io/badge/React%20Query-FF4154?logo=reactquery&logoColor=fff) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white) ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff)
 
 - **Framework:** React 18 with TypeScript, using React Router (TanStack Router) for routing.
 - **State Management & Data Fetching:** React Query (@tanstack/react-query) for server state management and caching.
@@ -29,6 +29,8 @@ freemium model encouraging users to upgrade for enhanced capabilities.
 - **Icons:** Lucide React for iconography.
 
 ### Backend
+
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white) ![Hono](https://img.shields.io/badge/Hono-E36002?logo=hono&logoColor=fff) ![Drizzle](https://img.shields.io/badge/Drizzle-C5F74F?logo=drizzle&logoColor=000) ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?logo=supabase&logoColor=fff) ![Redis](https://img.shields.io/badge/Redis-%23DD0031.svg?logo=redis&logoColor=white)
 
 - **Runtime:** Bun runtime for server-side execution.
 - **Framework:** Hono (a lightweight web framework) with OpenAPI integration for API documentation.

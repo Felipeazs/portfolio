@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content"
 import Layout from "../../layouts/Layout.astro"
+import Link from "../../components/Link.astro"
 
 export async function getStaticPaths() {
 	const proyectos = await getCollection("proyectos")
@@ -27,8 +28,13 @@ const { Content } = await render(proyecto)
 		<main class="max-w-3xl">
 			<h1
 				transition:name={`title-${slug}`}
-				class="text-4xl font-bold mb-4">
-				{title}
+				class="text-4xl font-bold mb-6">
+				<a
+					href={data.url}
+					class="flex gap-2">
+					{title}
+					<Link />
+				</a>
 			</h1>
 			<div class="prose prose-invert">
 				<Content />

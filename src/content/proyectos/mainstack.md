@@ -1,10 +1,8 @@
 ---
 title: Mainstack
 img: "/lazocns.png"
-url: "https://lazocns-4thdy.kinsta.app/"
+url: "https://mainstack.up.railway.app/"
 ---
-
-Mainstack
 
 ## Purpose and Proposal
 
@@ -17,6 +15,8 @@ interface, aiming for a smooth user experience with state management and error h
 
 ### Frontend
 
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) ![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=flat&logo=bun&logoColor=white) ![React Query](https://img.shields.io/badge/React%20Query-FF4154?logo=reactquery&logoColor=fff) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white) ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff)
+
 - **Framework:** React with TypeScript
 - **Routing:** `@tanstack/react-router` for declarative and nested routing
 - **State Management:** Zustand for global state (user session, breadcrumbs)
@@ -26,6 +26,8 @@ interface, aiming for a smooth user experience with state management and error h
 - **Styling:** CSS imported via `index.css` (likely Tailwind or custom CSS)
 
 ### Backend
+
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white) ![Hono](https://img.shields.io/badge/Hono-E36002?logo=hono&logoColor=fff) ![Drizzle](https://img.shields.io/badge/Drizzle-C5F74F?logo=drizzle&logoColor=000) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-%23DD0031.svg?logo=redis&logoColor=white)
 
 - **Framework:** Hono (a lightweight TypeScript web framework)
 - **Database:** PostgreSQL accessed via Drizzle ORM with schema definitions in TypeScript
