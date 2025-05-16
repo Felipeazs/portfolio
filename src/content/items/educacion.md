@@ -12,3 +12,9 @@ title: Educación
 
 - **B. Sc y M. Sc en Ingeniería en Biotecnología**,</br> UNAB, Santiago, Chile.</br>
   [2008 - 2015]
+
+## Certificados
+
+- [Desarrollador Full Stack Javascript](./javascript.png)
+
+- [Desarrollador Full Stack Java Trainee](./java-trainee.pdf)
