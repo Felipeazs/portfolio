@@ -2,5 +2,6 @@
 title: Experiencia
 ---
 
-- Lazo SpA: cargo, descripción, fechas
-- Beloop: cargo, descripción, fechas
+- CTO, Lazo SpA [2022 - actualmente]
+- Técnico en Desarrollo, Beloop [noviembre 2024 - mayo 2025]
+- Investigador Científico, Fraunhofer Chile Research [2015 - 2021]

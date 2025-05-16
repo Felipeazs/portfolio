@@ -4,7 +4,14 @@ import { getCollection } from "astro:content"
 
 const items = await getCollection("items")
 
-const custom_order = ["Perfil", "Experiencia", "Proyectos", "Certificaciones", "Contacto"]
+const custom_order = [
+	"Perfil",
+	"Educación",
+	"Experiencia",
+	"Proyectos",
+	"Certificaciones",
+	"Contacto",
+]
 
 const ordered_items = custom_order.map((title) => {
 	const ele = items.find((i) => i.data.title === title)!
