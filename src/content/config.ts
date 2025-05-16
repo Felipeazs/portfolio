@@ -10,7 +10,7 @@ const proyectos = defineCollection({
 	schema: z.object({
 		title: z.string(),
 		img: z.string(),
-		url: z.string().url(),
+		url: z.string().url().optional(),
 	}),
 })
 

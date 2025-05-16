@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 
 const { proyecto } = Astro.props
 const { data, slug } = proyecto
-const { title } = data
+const { title, url } = data
 
 export const prerender = true
 
@@ -30,12 +30,12 @@ const { Content } = await render(proyecto)
 				transition:name={`title-${slug}`}
 				class="text-3xl md:text-4xl font-bold mb-10">
 				<a
-					href={data.url}
+					href={url}
 					target="_blank"
 					rel="noopener noreferrer"
 					class="flex gap-2">
 					{title}
-					<Link />
+					{url && <Link />}
 				</a>
 			</h1>
 			<div class="prose prose-invert">

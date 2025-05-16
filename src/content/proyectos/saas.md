@@ -1,5 +1,5 @@
 ---
-title: SaaS
+title: Plataforma SaaS
 img: "/lazocns.png"
 url: "https://saas-v9m2c.kinsta.app/"
 ---
