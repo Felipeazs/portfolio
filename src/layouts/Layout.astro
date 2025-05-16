@@ -22,13 +22,26 @@ const { title } = Astro.props
 	</head>
 
 	<body
-		class="font-jetbrains bg-[#13151a] bg-[url(/ascii-art.png)] bg-cover bg-blend-multiply transition-all">
+		class="font-jetbrains bg-[#13151a] bg-[url(/ascii-art.png)] bg-fixed bg-blend-multiply transition-all overflow-y-scroll">
 		<header
-			class="fixed py-5 md:py-10 w-full text-3xl text-center bg-[#13151a] opacity-80 z-20">
-			<a href="/">Felipe Zapata Soto</a>
+			class="fixed flex justify-between p-5 md:py-10 md:px-20 w-full z-20 bg-[#13151a] bg-[url(/ascii-art.png)] bg-opacity-90 bg-fixed bg-blend-multiply">
+			<a
+				href="/"
+				class="md:text-3xl"
+				>Felipe Zapata Soto</a
+			>
+			<a
+				href="/cv-felipe-zapata.pdf"
+				title="Descargar Curriculum"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="text-balance inline-flex gap-2 items-center bg-transparent hover:bg-slate-500 active:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg border border-white transition duration-200 ease-in-out hover:scale-105 justify-center text-center hover:cursor-pointer"
+				download
+				>[pdf]</a
+			>
 		</header>
 		<main>
-			<div class="py-20 md:py-10">
+			<div class="flex flex-col justify-center items-center py-20 md:py-10 gap-20">
 				<slot />
 			</div>
 		</main>
