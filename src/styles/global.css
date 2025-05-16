@@ -52,3 +52,11 @@ img {
 	margin: 0;
 	display: inline-block;
 }
+
+#link {
+	text-decoration: underline white 2px;
+}
+#link:hover {
+	color: #fb647f;
+	text-decoration: underline #fb647f 2px;
+}

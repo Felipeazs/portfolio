@@ -14,6 +14,6 @@ title: Educación
 
 ## Certificados
 
-- [Desarrollador Full Stack Javascript](./javascript.png)
+- [<span id="link">Desarrollador Full Stack Javascript</span>](./javascript.png)
 
-- [Desarrollador Full Stack Java Trainee](./java-trainee.pdf)
+- [<span id="link">Desarrollador Full Stack Java Trainee</span>](./java-trainee.pdf)
