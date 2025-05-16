@@ -2,10 +2,6 @@
 title: Certificaciones
 ---
 
-#### Desarrollador Full Stack Javascript, Desafío Latam, Santiago, Chile. [🔖](./javascript.png)
+- [Desarrollador Full Stack Javascript](./javascript.png)
 
-Diciembre 2021 - Abril 2023
-
-#### Desarrollador Full Stack Java Trainee, Talento Digital, Santaigo, Chile. [🔖](./java-trainee.pdf)
-
-Marzo 2021 - Agosto 2021
+- [Desarrollador Full Stack Java Trainee](./java-trainee.pdf)
