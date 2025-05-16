@@ -4,6 +4,13 @@ import { getCollection } from "astro:content"
 
 const items = await getCollection("items")
 
+const custom_order = ["Perfil", "Experiencia", "Proyectos", "Certificaciones", "Contacto"]
+
+const ordered_items = custom_order.map((title) => {
+	const ele = items.find((i) => i.data.title === title)!
+	return ele
+})
+
 export const prerender = true
 ---
 
@@ -13,7 +20,7 @@ export const prerender = true
 		class="text-center">
 		<div class="px-4 py-20 mx-auto max-w-screen-xl">
 			{
-				items.map((item) => {
+				ordered_items.map((item) => {
 					const { slug, data } = item
 					const { title } = data
 

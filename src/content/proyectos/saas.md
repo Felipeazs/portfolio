@@ -4,66 +4,54 @@ img: "/lazocns.png"
 url: "https://saas-v9m2c.kinsta.app/"
 ---
 
-## Purpose and Proposal
+SaaS es una plataforma web moderna centrada en la gestión de eventos y la categorización, con autenticación de usuarios y planes de suscripción escalonados (Free y Pro). La aplicación tiene como objetivo proporcionar a los usuarios un tablero para crear, administrar y clasificar eventos, con integraciones como mensajes de Discord y procesamiento de pagos. La presencia de páginas de actualización y límites de cuotas sugiere que un modelo freemium alienta a los usuarios a actualizar para mejorar las capacidades.
 
-This web application appears to be a modern SaaS platform focused on event management and categorization, with user authentication and
-tiered subscription plans (free and pro). The app aims to provide users with a dashboard to create, manage, and categorize events,
-likely with integrations such as Discord messaging and payment processing. The presence of upgrade pages and quota limits suggests a
-freemium model encouraging users to upgrade for enhanced capabilities.
-
-## Web Stack
+## Stack
 
 ### Frontend
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) ![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=flat&logo=bun&logoColor=white) ![React Query](https://img.shields.io/badge/React%20Query-FF4154?logo=reactquery&logoColor=fff) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white) ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff)
 
-- **Framework:** React 18 with TypeScript, using React Router (TanStack Router) for routing.
-- **State Management & Data Fetching:** React Query (@tanstack/react-query) for server state management and caching.
-- **UI Components:** Custom components with Tailwind CSS for styling, enhanced by utility libraries like `clsx` and `tailwind-merge`.
-- **Authentication:** Clerk React SDK for user authentication and session management.
-- **Build Tool:** Vite with React SWC plugin for fast builds and development.
-- **Routing:** TanStack Router with generated route tree for type-safe routing.
-- **Animations:** Framer Motion for UI animations.
-- **Syntax Highlighting:** react-syntax-highlighter for code display.
-- **Other UI Libraries:** Radix UI components (dialog, label, slot, tabs) for accessible UI primitives.
-- **Icons:** Lucide React for iconography.
+- **Framework:** React 18 con Typescript.
+- **Routing:** Tanstack Router.
+- **Gestión de estados y obtención de datos:** TanStack Query.
+- **Componentes UI:** Componentes personalizados con TailwindCSS.
+- **Autenticación:** Clerk SDK para autenticación y gestión de sesiones.
+- **Compilación:** VITE con React SWC.
+- **Animaciones:** Movimiento de Framer para animaciones de interfaz de usuario.
+- **Otras bibliotecas de UI:** componentes de UI radix (diálogo, etiqueta, ranura, pestañas) para primitivas de interfaz de usuario accesibles.
 
 ### Backend
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white) ![Hono](https://img.shields.io/badge/Hono-E36002?logo=hono&logoColor=fff) ![Drizzle](https://img.shields.io/badge/Drizzle-C5F74F?logo=drizzle&logoColor=000) ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?logo=supabase&logoColor=fff) ![Redis](https://img.shields.io/badge/Redis-%23DD0031.svg?logo=redis&logoColor=white)
 
-- **Runtime:** Bun runtime for server-side execution.
-- **Framework:** Hono (a lightweight web framework) with OpenAPI integration for API documentation.
-- **API Design:** RESTful API routes organized by domain (auth, user, category, event, payment, clerk).
-- **Database:** Drizzle ORM with Zod schemas for type-safe database interactions.
-- **Authentication:** Clerk backend SDK for user management.
-- **Logging:** Pino with pino-pretty for structured and readable logs.
-- **Discord Integration:** Discord.js REST client for sending messages and embeds.
-- **Payment:** Stripe integration for checkout sessions and subscription management.
-- **Caching/Queue:** Redis client present, likely for caching or background jobs.
-- **Environment:** Configured via environment variables with strong typing.
+- **Runtime:** Bun runtime para gestión del servidor.
+- **Framework:** Hono con OpenAPI (gestión de documentación).
+- **Diseño API:** RESTful.
+- **Base de datos:** Drizzle ORM con Zod (validación y seguridad).
+- **Authentication:** Clerk.
+- **Mensajería:** Discord para enviar mensajes e incrustaciones.
+- **Método de pago:** Stripe para sesiones de pago y gestión de suscripción.
+- **Caching/Queue:** Redis.
 
-### Tools and Services
+### Herramientas y Servicios
 
-- **TypeScript:** Strictly typed codebase with modern ES2021 target.
-- **Linting and Formatting:** ESLint and Prettier integrated in dev scripts.
-- **Testing:** Vitest for unit and integration tests.
-- **Version Control:** Git repository (implied).
-- **CI/CD:** Not explicitly shown but likely present or planned.
-- **Deployment:** Bun server configured to serve static assets and API routes, optimized for production and development modes.
-- **OpenAPI:** Auto-generated API docs and validation via hono-openapi and zod.
+- **TypeScript**.
+- **Linting y Formateo:** ESLint y Prettier.
+- **Testing:** Vitest.
+- **Version Control:** Git.
+- **CI/CD:** Github actions
+- **OpenAPI:** Auto generación de documentación de la API.
 
-## Features
+## Características
 
-- **User Authentication:** Sign-in, sign-up, and session management via Clerk.
-- **Event Management:** Create, categorize, and list events with pagination and filtering.
-- **Dashboard:** User dashboard with category management and event creation modals.
-- **Subscription Plans:** Free and Pro plans with quotas on event counts and categories.
+- **Autenticación de usuario:** Sign-in, sign-up, manejo de sesiones via Clerk.
+- **Manejo de eventos:** Crear, Categorizar, y listar eventos con paginación y filtrado.
+- **Dashboard:** dashboard de usuario con manejo de categorias y eventos (modals).
+- **Planes de Subscripción:** Free y Pro con cuotas según cantidad de eventos y categorías.
 - **Payment Processing:** Stripe checkout integration for upgrading plans.
+- **Procesamiento de pagos:** Integración de pago con Stripe para actualización de planes.
 - **Discord Messaging:** Ability to send Discord embeds/messages via backend integration.
-- **Responsive UI:** Mobile and desktop friendly with drawer menus and modals.
-- **Routing:** Nested and dynamic routes with type safety.
-- **API:** Well-structured REST API with OpenAPI docs.
-- **Logging and Monitoring:** Structured logging with pino.
-- **Static Asset Serving:** Efficient serving of frontend assets with fallback to index.html.
-- **Development Experience:** Fast refresh, type safety, and integrated dev server with Vite and Bun.
+- **Mensajería Discord:** Envío de mensajes según eventos creados.
+- **UI responsivo**
+- **API:** Full documentación de la API REST con OpenAPI.
