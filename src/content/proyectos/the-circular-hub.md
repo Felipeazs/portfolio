@@ -3,7 +3,7 @@ title: Fundación The Circular Hub 🚧
 img: "/the-circular-hub.png"
 ---
 
-_(en proceso)_
+_(en construcción)_
 
 ## Propósito y Propuesta
 
