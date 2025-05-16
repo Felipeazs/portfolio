@@ -2,7 +2,7 @@
 title: Perfil
 ---
 
-👨🏻‍💻 Soy desarrollador web Full Stack junior con 4 años de experiencia formal, especializado en JavaScript y con una base sólida Typescript. He trabajado en el desarrollo de plataformas web, MVPs y servicios digitales con foco en seguridad, escalabilidad y rendimiento.
+👨🏻‍💻 Soy desarrollador web Full Stack con 4 años de experiencia formal, especializado en JavaScript y con una base sólida Typescript. He trabajado en el desarrollo de plataformas web, MVPs y servicios digitales con foco en seguridad, escalabilidad y rendimiento.
 
 Mi experiencia técnica incluye herramientas modernas como **React, Express, Hono, Vite, Drizzle y Redis, además de manejo de bases de datos SQL y NoSQL como Postgresql y MongoDB**. También tengo conocimientos en Java y Vue, pruebas automatizadas con Vitest, bots con integración en WhatsApp, y uso de Git y Github para flujos colaborativos.
 
