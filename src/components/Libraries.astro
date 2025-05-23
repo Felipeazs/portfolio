@@ -1,0 +1,78 @@
+---
+import Card from "./Card.astro"
+
+import shadcn from "../assets/shadcn.png"
+import zod from "../assets/zod.png"
+import zustand from "../assets/zustand.png"
+import tanstack_query from "../assets/tanstack_query.png"
+import vitest from "../assets/vitest.png"
+import drizzle from "../assets/drizzle.png"
+import prisma from "../assets/prisma.png"
+import posthog from "../assets/posthog.png"
+import mongodb from "../assets/mongodb.png"
+
+const width = 50
+const height = 50
+
+const images = [
+	{
+		src: shadcn.src,
+		width,
+		height,
+		alt: "shadcn",
+	},
+	{
+		src: zod.src,
+		width,
+		height,
+		alt: "zod",
+	},
+	{
+		src: zustand.src,
+		width,
+		height,
+		alt: "zustand",
+	},
+	{
+		src: tanstack_query.src,
+		width,
+		height,
+		alt: "tanstack",
+	},
+	{
+		src: vitest.src,
+		width,
+		height,
+		alt: "vitest",
+	},
+	{
+		src: drizzle.src,
+		width,
+		height,
+		alt: "drizzle",
+	},
+	{
+		src: mongodb.src,
+		width,
+		height,
+		alt: "mongodb",
+	},
+	{
+		src: prisma.src,
+		width,
+		height,
+		alt: "prisma",
+	},
+	{
+		src: posthog.src,
+		width,
+		height,
+		alt: "posthog",
+	},
+]
+---
+
+<Card
+	title="Librerías"
+	images={images}
+/>

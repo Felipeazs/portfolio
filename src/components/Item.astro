@@ -1,0 +1,14 @@
+---
+const { slug, title } = Astro.props
+---
+
+<article>
+	<div class="flex w-full flex-col items-center justify-center">
+		<a
+			href={`/${slug}`}
+			transition:name={`title-${slug}`}
+			class="relative mb-2 cursor-pointer text-2xl leading-tight font-semibold text-white transition-all ease-in-out before:absolute before:bottom-0 before:left-[50%] before:h-[2px] before:w-0 before:origin-center before:bg-rose-400 before:transition-[width] before:duration-700 before:ease-in-out after:absolute after:right-[50%] after:bottom-0 after:h-[2px] after:w-0 after:origin-center after:bg-rose-400 after:transition-[width] after:duration-700 after:ease-in-out hover:text-rose-400 hover:before:w-[50%] hover:after:w-[50%] md:text-5xl">
+			{title}
+		</a>
+	</div>
+</article>
