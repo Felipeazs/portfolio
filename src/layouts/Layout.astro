@@ -25,7 +25,7 @@ const { title } = Astro.props
 	</head>
 
 	<body
-		class="font-jetbrains h-[130svh] overflow-y-scroll bg-[#13151a] bg-[url(/ascii-art.png)] bg-fixed bg-blend-multiply transition-all">
+		class="font-jetbrains min-h-[130svh] overflow-y-scroll bg-[#13151a] bg-[url(/ascii-art.png)] bg-fixed bg-blend-multiply transition-all">
 		<header
 			class="bg-opacity-90 fixed z-20 flex w-full justify-between bg-[#13151a] bg-[url(/ascii-art.png)] bg-fixed p-5 text-white bg-blend-multiply md:px-20 md:py-5">
 			<div class="flex flex-col">
@@ -42,7 +42,7 @@ const { title } = Astro.props
 				target="_blank"
 				rel="noopener noreferrer"
 				class="inline-flex items-center justify-center gap-2 rounded-lg border border-white bg-transparent px-4 py-2 text-center font-bold text-balance text-white transition duration-200 ease-in-out hover:scale-105 hover:cursor-pointer hover:border-rose-600 hover:bg-rose-600 active:bg-gray-600"
-				>{(<Download />)} descargar cv</a
+				>{(<Download />)} <span class="hidden md:inline">descargar cv</span></a
 			>
 		</header>
 		<main>
