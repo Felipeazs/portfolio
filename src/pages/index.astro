@@ -18,8 +18,8 @@ export const prerender = true
 <Layout title="Felipe Zapata Soto">
 	<section
 		aria-label="Mi portafolio"
-		class="relative mx-auto max-w-screen-xl text-center">
-		<div class="max-full flex flex-col items-center justify-center py-5 md:px-4">
+		class="relative mx-auto flex max-w-screen-xl flex-col gap-10 text-center">
+		<div class="flex w-full flex-col items-center justify-center bg-rose-400/10 py-5">
 			<p class="my-20 text-white md:w-[60%] md:text-xl">
 				¡Bienvenido a mi portafolio! <br /> Explora mis proyectos, habilidades y trayectoria
 				como desarrollador web full stack en Javascript.<br />
@@ -30,7 +30,7 @@ export const prerender = true
 					>{">contactarte conmigo<"}</a
 				>
 			</p>
-			<Items items={ordered_items} />
 		</div>
+		<Items items={ordered_items} />
 	</section>
 </Layout>
