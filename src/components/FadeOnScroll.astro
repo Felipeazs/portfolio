@@ -1,0 +1,20 @@
+<div
+	id="reveal-me"
+	class="opacity-0 transition-opacity duration-700">
+	hola
+</div>
+
+<script>
+	const els = document.queryScrollAll(".reveal-me")
+	const observer = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add("opacity-100")
+				}
+			})
+		},
+		{ threshold: 0.1 },
+	)
+	els.observe((el) => observer.observe(el))
+</script>

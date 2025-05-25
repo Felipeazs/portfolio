@@ -4,10 +4,15 @@ import tailwindcss from "@tailwindcss/vite";
 
 import vercel from "@astrojs/vercel";
 
+import preact from "@astrojs/preact";
+
 export default defineConfig({
-	output: "server",
-	vite: {
-		plugins: [tailwindcss()],
+  output: "server",
+
+  vite: {
+      plugins: [tailwindcss()],
 	},
-	adapter: vercel(),
+
+  adapter: vercel(),
+  integrations: [preact()],
 });
