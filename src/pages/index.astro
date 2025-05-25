@@ -27,10 +27,12 @@ export const prerender = true
 				<a
 					href="/contact"
 					class="transition-color font-semibold underline duration-400 ease-in-out hover:cursor-pointer hover:text-rose-400"
-					>{"contactarte conmigo<"}</a
+					>{">contactarte conmigo<"}</a
 				>
 			</p>
 		</div>
-		<Items items={ordered_items} />
+		<div class="snap-y snap-mandatory">
+			<Items items={ordered_items} />
+		</div>
 	</section>
 </Layout>

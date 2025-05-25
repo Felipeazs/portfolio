@@ -15,17 +15,18 @@ const { items } = Astro.props
 					<a
 						href={`/${slug}`}
 						transition:name={`title-${slug}`}
-						class="card relative mb-2 cursor-pointer text-2xl leading-tight font-semibold text-white transition-all ease-in-out before:absolute before:bottom-0 before:left-[50%] before:h-[2px] before:w-0 before:origin-center before:bg-rose-400 before:transition-[width] before:duration-700 before:ease-in-out after:absolute after:right-[50%] after:bottom-0 after:h-[2px] after:w-0 after:origin-center after:bg-rose-400 after:transition-[width] after:duration-700 after:ease-in-out hover:text-rose-400 hover:before:w-[50%] hover:after:w-[50%] md:text-4xl uppercase drop-shadow-[10px_35px_35px_rgba(255,99,126,0.8)]">
+						class="card relative mb-2 cursor-pointer text-2xl leading-tight font-semibold text-white transition-all ease-in-out before:absolute before:bottom-0 before:left-[50%] before:h-[2px] before:w-0 before:origin-center before:bg-rose-400 before:transition-[width] before:duration-700 before:ease-in-out after:absolute after:right-[50%] after:bottom-0 after:h-[2px] after:w-0 after:origin-center after:bg-rose-400 after:transition-[width] after:duration-700 after:ease-in-out hover:text-rose-400 hover:before:w-[50%] hover:after:w-[50%] md:text-4xl uppercase drop-shadow-[10px_35px_35px_rgba(255,99,126,0.8)] opacity-0 transform-y-[50px]">
 						{`<${title}/>`}
 					</a>
 				</div>
 			)
 		})
 	}
-	<div class="h-screen w-full flex flex-col justify-center items-center snap-center">
+	<div
+		class="h-screen w-full flex flex-col justify-center items-center snap-center scrolling-section items">
 		<div class="group relative w-full">
 			<span
-				class="text-2xl md:text-4xl mb-2 cursor-pointer leading-tight font-semibold text-white transition-all ease-in-out group-hover:w-max before:absolute before:bottom-0 before:left-[50%] before:h-[2px] before:w-0 before:origin-center before:bg-rose-400 before:transition-[width] before:duration-700 before:ease-in-out after:absolute after:right-[50%] after:bottom-0 after:h-[2px] after:w-0 after:origin-center after:bg-rose-400 after:transition-[width] after:duration-700 after:ease-in-out hover:text-rose-400 hover:before:w-[50%] hover:after:w-[50%] snap-center uppercase drop-shadow-[1px_35px_35px_rgba(255,99,126,0.8)]"
+				class="card text-2xl md:text-4xl mb-2 cursor-pointer leading-tight font-semibold text-white transition-all ease-in-out group-hover:w-max before:absolute before:bottom-0 before:left-[50%] before:h-[2px] before:w-0 before:origin-center before:bg-rose-400 before:transition-[width] before:duration-700 before:ease-in-out after:absolute after:right-[50%] after:bottom-0 after:h-[2px] after:w-0 after:origin-center after:bg-rose-400 after:transition-[width] after:duration-700 after:ease-in-out hover:text-rose-400 hover:before:w-[50%] hover:after:w-[50%] snap-center uppercase drop-shadow-[1px_35px_35px_rgba(255,99,126,0.8)] opacity-0 transform-y-[50px]"
 				>{"<Habilidades/>"}</span
 			>
 			<div
@@ -40,14 +41,6 @@ const { items } = Astro.props
 		</div>
 	</div>
 </div>
-
-<style>
-	.scrolling-section {
-		opacity: 0;
-		transform: translatey(50px);
-		margin-bottom: clamp(6em, 10vw, 8em);
-	}
-</style>
 
 <script>
 	import { animate, stagger, inView } from "motion"
@@ -67,4 +60,9 @@ const { items } = Astro.props
 		},
 		{ amount: 0.25 },
 	)
+
+	window.addEventListener("astro:after-navigate", () => {
+		const cards = document.querySelectorAll(".card")
+		animate(cards, { opacity: 1, y: 0 }, { duration: 0 })
+	})
 </script>

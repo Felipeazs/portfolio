@@ -8,7 +8,15 @@ import Download from "../components/Download.astro"
 const { title } = Astro.props
 ---
 
-<!doctype html>
+<script>
+	import { animate } from "motion"
+
+	window.addEventListener("astro:after-navigate", () => {
+		const cards = document.querySelectorAll(".card")
+		animate(cards, { opacity: 1, y: 0 }, { duration: 0 })
+	})
+</script>
+
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
