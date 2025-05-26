@@ -1,18 +1,15 @@
-import { defineConfig } from "astro/config";
-
-import tailwindcss from "@tailwindcss/vite";
-
-import vercel from "@astrojs/vercel";
-
-import preact from "@astrojs/preact";
+import { defineConfig } from "astro/config"
+import tailwindcss from "@tailwindcss/vite"
+import vercel from "@astrojs/vercel"
+import react from "@astrojs/react"
 
 export default defineConfig({
-  output: "server",
+	output: "server",
 
-  vite: {
-      plugins: [tailwindcss()],
+	vite: {
+		plugins: [tailwindcss()],
 	},
 
-  adapter: vercel(),
-  integrations: [preact()],
-});
+	adapter: vercel(),
+	integrations: [react()],
+})
