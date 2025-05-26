@@ -39,7 +39,7 @@ const { Content } = await render(item)
 							<a
 								href={`/proyectos/${p.slug}`}
 								transition:name={`title-${p.slug}`}
-								class="relative mb-2 w-full cursor-pointer text-2xl leading-tight font-semibold text-white transition-all ease-in-out before:absolute before:bottom-0 before:left-[50%] before:h-[2px] before:w-0 before:origin-center before:bg-rose-400 before:transition-[width] before:duration-700 before:ease-in-out after:absolute after:right-[50%] after:bottom-0 after:h-[2px] after:w-0 after:origin-center after:bg-rose-400 after:transition-[width] after:duration-700 after:ease-in-out hover:text-rose-400 hover:before:w-[50%] hover:after:w-[50%]">
+								class="mb-2 cursor-pointer snap-center text-2xl leading-tight font-semibold text-white drop-shadow-[1px_35px_35px_rgba(255,99,126,0.8)] transition-all ease-in-out group-hover:w-max before:absolute before:bottom-0 before:left-[50%] before:h-[2px] before:w-0 before:origin-center before:bg-rose-400 before:transition-[width] before:duration-700 before:ease-in-out after:absolute after:right-[50%] after:bottom-0 after:h-[2px] after:w-0 after:origin-center after:bg-rose-400 after:transition-[width] after:duration-700 after:ease-in-out hover:text-rose-400 hover:before:w-[50%] hover:after:w-[50%] md:text-2xl">
 								{p.data.title}
 							</a>
 						))}
