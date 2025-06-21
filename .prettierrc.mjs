@@ -5,8 +5,8 @@ export default {
 	trailingComma: "all",
 	semi: false,
 	bracketSameLine: true,
-    endOfLine: "auto",
-    singleAttributePerLine: true,
+	endOfLine: "auto",
+	singleAttributePerLine: true,
 	plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
 	overrides: [
 		{
@@ -16,4 +16,4 @@ export default {
 			},
 		},
 	],
-};
+}
